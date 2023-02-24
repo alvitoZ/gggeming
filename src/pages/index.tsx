@@ -6,6 +6,7 @@ import Button from "@/components/atoms/Button";
 import ImageHome from "@/components/molecules/ImageHome";
 import PrimaryNavigation from "@/components/molecules/PrimaryNavigation";
 import Section2 from "@/components/molecules/Section2";
+import Section from "@/components/molecules/Section";
 import ProgramList from "@/components/molecules/ProgramList";
 import Footer2 from "@/components/molecules/Footer2";
 
@@ -17,7 +18,7 @@ const index = () => {
         description="Description of Create Next Page by Faizmul"
       />
       {/* <PrimaryNavigation /> */}
-      {/* <ImageHome /> */}
+      <ImageHome />
       {/* <Button
         action={(e) => {
           alert("Triggered");
@@ -25,6 +26,7 @@ const index = () => {
         title="Pelajari Lebih Lanjut"
       /> */}
       {/* <Section2 /> */}
+      <Section />
       {/* <ProgramList /> */}
     </BlankTemplate>
   );

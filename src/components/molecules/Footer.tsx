@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 function Footer() {
   return (
     <>
@@ -17,37 +17,46 @@ function Footer() {
               Terapi Wicara untuk Disabilitas Pendengaran
             </p>
             <div className="flex gap-3 pl-[3%] flex-wrap pb-5 px-20">
-              <Image
-                src="/static/svgs/Facebook.svg"
-                alt="facebook"
-                width={36}
-                height={36}
-              />
-              <Image
-                src="/static/svgs/Twitter.svg"
-                alt="facebook"
-                width={36}
-                height={36}
-              />
-              <Image
-                src="/static/svgs/Instagram.svg"
-                alt="instagram"
-                width={36}
-                height={36}
-              />
-              <Image
-                src="/static/svgs/Linkedin.svg"
-                alt="linkedin"
-                width={36}
-                height={36}
-              />
-              <Image
-                src="/static/svgs/Youtube.svg"
-                alt="youtube"
-                width={36}
-                height={36}
-              />
-
+              <Link href={"/"}>
+                <Image
+                  src="/static/svgs/Facebook.svg"
+                  alt="facebook"
+                  width={36}
+                  height={36}
+                />
+              </Link>
+              <Link href={"/"}>
+                <Image
+                  src="/static/svgs/Twitter.svg"
+                  alt="facebook"
+                  width={36}
+                  height={36}
+                />
+              </Link>
+              <Link href={"/"}>
+                <Image
+                  src="/static/svgs/Instagram.svg"
+                  alt="instagram"
+                  width={36}
+                  height={36}
+                />
+              </Link>
+              <Link href={"/"}>
+                <Image
+                  src="/static/svgs/Linkedin.svg"
+                  alt="linkedin"
+                  width={36}
+                  height={36}
+                />
+              </Link>
+              <Link href={"/"}>
+                <Image
+                  src="/static/svgs/Youtube.svg"
+                  alt="youtube"
+                  width={36}
+                  height={36}
+                />
+              </Link>
               {/* <FaYoutube className="text-2xl cursor-pointer hover:text-red-600" /> */}
             </div>
           </ul>
@@ -57,19 +66,19 @@ function Footer() {
           <div className="p-5 flex flex-wrap w-auto">
             <ul>
               <p className="text-gray-800 text-2xl pb-8 font-['DM Sans', sans-serif] text-[#843C74] font-semibold">
-                Tautan Cepat
+                <Link href={"/"}>Tautan Cepat</Link>
               </p>
               <li className="pb-2 font-['DM Sans', sans-serif] text-[#1E1E1E] hover:text-blue-600 cursor-pointer">
-                Visi Kami
+                <Link href={"/"}>Visi Kami</Link>
               </li>
               <li className="pb-2 font-['DM Sans', sans-serif] text-[#1E1E1E] hover:text-blue-600 cursor-pointer">
-                Kedai Kami
+                <Link href={"/"}>Kedai Kami</Link>
               </li>
               <li className="pb-2 font-['DM Sans', sans-serif] text-[#1E1E1E] hover:text-blue-600 cursor-pointer">
-                Karir
+                <Link href={"/"}> Karir</Link>
               </li>
               <li className="pb-2 font-['DM Sans', sans-serif] text-[#1E1E1E] hover:text-blue-600 cursor-pointer">
-                Berita & Informasi
+                <Link href={"/"}>Berita & Informasi</Link>
               </li>
             </ul>
           </div>
@@ -79,16 +88,16 @@ function Footer() {
           <div className="p-5 flex flex-wrap w-auto">
             <ul>
               <p className="text-gray-800 text-2xl pb-8 font-['DM Sans', sans-serif] text-[#843C74] font-semibold">
-                Toko
+                <Link href={"/"}>Toko</Link>
               </p>
               <li className="pb-2 font-['DM Sans', sans-serif] text-[#1E1E1E] hover:text-blue-600 cursor-pointer">
-                Produk Kami
+                <Link href={"/"}>Produk Kami</Link>
               </li>
               <li className="pb-2 font-['DM Sans', sans-serif] text-[#1E1E1E] hover:text-blue-600 cursor-pointer">
-                Cara Order
+                <Link href={"/"}>Cara Order</Link>
               </li>
               <li className="pb-2 font-['DM Sans', sans-serif] text-[#1E1E1E] hover:text-blue-600 cursor-pointer">
-                FAQ’s
+                <Link href={"/"}>FAQ’s</Link>
               </li>
             </ul>
           </div>

@@ -1,58 +1,5 @@
-// import Link from "next/link";
-// import Image from "next/image";
-// import Button from "../atoms/Button";
-
-import { height } from "@mui/system";
-import Image from "next/image";
-
-// const PrimaryNavigation = () => {
-//   const userData = {
-//     name: "Jane Doe",
-//     email: "envkt@example.com",
-//     password: "password",
-//     role: "admin",
-//   };
-
-//   return (
-//     <nav classNameNameNameName="flex items-center justify-between flex-wrap bg-[#FFFFFF] p-3">
-//       <div classNameNameNameName="w-full block flex-grow lg:flex lg:items-center lg:w-auto ">
-//         <ul classNameNameNameName="lg:flex-grow pl-20 text-[#843C74] hover:text-[#413c84]">
-//           <Link classNameNameNameName="hyperlink" href="/">
-//             Visi Kami
-//           </Link>
-//           <Link classNameNameNameName="hyperlink" href="/about">
-//             Produk Kami
-//           </Link>
-//         </ul>
-//       </div>
-//       <div classNameNameNameName="flex items-center flex-shrink-0 mr-6">
-//         <span classNameNameNameName="font-semibold text-xl tracking-tight">
-//           <Image
-//             // loader={myLoader}
-//             src="/images/LOGO_SEHJIRA_(1)_1.png"
-//             alt="image"
-//             width={81}
-//             height={87}
-//           />
-//         </span>
-//       </div>
-//       <div classNameNameNameName="w-full block flex-grow lg:w-auto lg:flex lg:items-center">
-//         <ul classNameNameNameName="flex lg:flex-grow justify-end pr-16 text-[#843C74] hover:text-[#413c84]">
-//           <Link classNameNameNameName="hyperlink" href="/">
-//             Kedai Kami
-//           </Link>
-//           <Link classNameNameNameName="hyperlink" href="/about">
-//             Tentang Kami
-//           </Link>
-//         </ul>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default PrimaryNavigation;
-
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const PrimaryNavigation = () => {
@@ -106,10 +53,10 @@ const PrimaryNavigation = () => {
           >
             <div className="md:flex md:flex-row md:gap-10">
               <p className="text-[#843C74] font-bold font-['DM Sans', sans-serif]">
-                Beranda
+                <Link href={"/"}>Beranda</Link>
               </p>
               <p className="text-[#843C74] font-bold font-['DM Sans', sans-serif]">
-                Tentang Kami
+                <Link href={"/"}>Tentang Kami</Link>
               </p>
             </div>
             <div>
@@ -122,10 +69,10 @@ const PrimaryNavigation = () => {
             </div>
             <div className="md:flex md:flex-row md:gap-10">
               <p className="text-[#843C74] font-bold font-['DM Sans', sans-serif]">
-                Hubungi Kami
+                <Link href={"/"}>Hubungi Kami</Link>
               </p>
               <p className="text-[#843C74] font-bold font-['DM Sans', sans-serif]">
-                Program Kami
+                <Link href={"/"}>Program Kami</Link>
               </p>
             </div>
           </div>

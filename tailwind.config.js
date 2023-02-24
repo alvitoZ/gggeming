@@ -22,7 +22,11 @@ module.exports = {
     fontFamily: {
       dmsans: "DM Sans",
     },
-    extend: {},
+    extend: {
+      // backgroundImage: {
+      //   sehijraBg: "url('/images/Container.png')",
+      // },
+    },
   },
   plugins: [],
 };
