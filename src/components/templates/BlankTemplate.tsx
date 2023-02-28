@@ -9,7 +9,7 @@ type props = {
 const BlankTemplate: NextPage<props> = ({ children }) => {
   return (
     <>
-      <div className="min-h-screen flex w-full flex-col">
+      <div className="min-h-screen flex w-full flex-col ">
         <PrimaryNavigation />
         {children}
       </div>

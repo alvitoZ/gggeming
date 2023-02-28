@@ -1,14 +1,21 @@
-import styles from "./Button.module.css";
+import React from "react";
 
-type props = {
-  title: string;
+type Props = {
   action?: (e: React.MouseEvent) => void;
+  title: string;
+  style?: string;
 };
-const Button = ({ title, action }: props) => {
+
+const Button = (props: Props) => {
   return (
-    <>
-      <button className={styles.Button}>{title}</button>
-    </>
+    <button
+      className={`${props.style}`}
+      onClick={(e) => {
+        props.action!(e);
+      }}
+    >
+      {props.title}
+    </button>
   );
 };
 

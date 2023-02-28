@@ -4,7 +4,7 @@ const section = () => {
   return (
     <>
       <div
-        className="flex flex-row  flex-wrap py-20
+        className="flex flex-row  flex-wrap justify-around py-20
       "
       >
         <div>
@@ -15,7 +15,7 @@ const section = () => {
             height={500}
           />
         </div>
-        <div className="w-1/12"></div>
+        <div className="w-[0.1rem]"></div>
         <div className="w-[17rem] flex justify-around flex-col">
           <div>
             <h3 className="pb-5 text-[22px] font-semibold text-[#5D5A88]">

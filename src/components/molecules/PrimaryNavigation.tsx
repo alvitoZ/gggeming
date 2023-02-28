@@ -27,12 +27,18 @@ const PrimaryNavigation = () => {
               alt="sehijra"
             />
           </div>
-          <p
+          <div
             className={`h-6 w-6 cursor-pointer md:hidden block`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            kucing menggigil
-          </p>
+            <Image
+              className={`cursor-pointer md:hidden block`}
+              src="/static/svgs/dehaze.svg"
+              height={100}
+              width={100}
+              alt="burger"
+            />
+          </div>
         </div>
 
         <div
@@ -52,14 +58,14 @@ const PrimaryNavigation = () => {
               "
           >
             <div className="md:flex md:flex-row md:gap-10">
-              <p className="text-[#843C74] font-bold font-['DM Sans', sans-serif]">
+              <p className="text-[#843C74] font-bold text-[24px]">
                 <Link href={"/"}>Beranda</Link>
               </p>
-              <p className="text-[#843C74] font-bold font-['DM Sans', sans-serif]">
+              <p className="text-[#843C74] font-bold text-[24px]">
                 <Link href={"/"}>Tentang Kami</Link>
               </p>
             </div>
-            <div>
+            <div className="hidden md:block">
               <Image
                 src="/images/LOGO_SEHJIRA_(1)_1.png"
                 height={87}
@@ -68,10 +74,10 @@ const PrimaryNavigation = () => {
               />
             </div>
             <div className="md:flex md:flex-row md:gap-10">
-              <p className="text-[#843C74] font-bold font-['DM Sans', sans-serif]">
+              <p className="text-[#843C74] font-bold text-[24px]">
                 <Link href={"/"}>Hubungi Kami</Link>
               </p>
-              <p className="text-[#843C74] font-bold font-['DM Sans', sans-serif]">
+              <p className="text-[#843C74] font-bold text-[24px]">
                 <Link href={"/"}>Program Kami</Link>
               </p>
             </div>

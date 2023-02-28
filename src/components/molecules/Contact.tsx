@@ -1,13 +1,12 @@
 import { Input } from "../atoms/Input";
 import { TextArea } from "../atoms/TextArea";
-import Button from "../atoms/Button";
-import ImageContent from "./ImageContent";
+import Button from "../atoms/ButtonContact";
 
 const Contact = () => {
   return (
     <>
       <div className="w-[65%]">
-        <h1 className="text-[#A03C78] h-auto font-bold font-dmsans text-[3rem] pt-14 pb-5">
+        <h1 className="text-[#A03C78] h-auto font-bold font-dmsans text-[3rem] pt-14 pb-5 leading-10">
           Get in touch today
         </h1>
         <p className="text-[#9795B5] font-normal text-[18px]">
